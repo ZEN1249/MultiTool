@@ -38,7 +38,7 @@ Projekt został stworzony z użyciem:
 - **HTML** – Struktura strony
 - **CSS** – Stylizacja i układ elementów
 - **JavaScript** – Funkcjonalność i dynamiczne interakcje
-- **Framework (jeśli używasz)** – Opisz użyty framework, np. React, Vue, Angular
+- **Framework**   React
 
 ## Instalacja
 
