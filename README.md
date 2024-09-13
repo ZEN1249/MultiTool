@@ -9,6 +9,23 @@
 
 </details>
 
+## Jak działa aplikacja?
+
+<details>
+  <summary>Kliknij, aby rozwinąć</summary>
+
+  Aplikacja **Multitool** wykorzystuje **React**, co pozwala na budowanie interaktywnych komponentów. Każde narzędzie jest osobnym komponentem, który aktualizuje swój stan na podstawie wprowadzonych danych, a wyniki są wyświetlane bez przeładowania strony.
+</details>
+
+## Na czym polega interakcja z użytkownikiem?
+
+<details>
+  <summary>Kliknij, aby rozwinąć</summary>
+
+  Użytkownik wybiera narzędzie, wprowadza dane i klika przycisk. Aplikacja przetwarza te dane i natychmiastowo wyświetla wyniki, co zapewnia intuicyjność i płynność działania.
+</details>
+
+
 ## Funkcje
 
 - **Konwertery** – Szybkie przeliczanie jednostek, walut i więcej.
