@@ -14,7 +14,7 @@
 <details>
   <summary>Kliknij, aby rozwinąć</summary>
 
-  Aplikacja **Multitool** wykorzystuje **React**, co pozwala na budowanie interaktywnych komponentów. Każde narzędzie jest osobnym komponentem, który aktualizuje swój stan na podstawie wprowadzonych danych, a wyniki są wyświetlane bez przeładowania strony.
+  Aplikacja **Multitool** wykorzystuje **JavaScript**, co pozwala na budowanie interaktywnych komponentów. Każde narzędzie jest osobnym komponentem, który aktualizuje swój stan na podstawie wprowadzonych danych, a wyniki są wyświetlane bez przeładowania strony.
 </details>
 
 ## Na czym polega interakcja z użytkownikiem?
