@@ -35,8 +35,8 @@
 
 Projekt został stworzony z użyciem:
 
-- **HTML5** – Struktura strony
-- **CSS3** – Stylizacja i układ elementów
+- **HTML** – Struktura strony
+- **CSS** – Stylizacja i układ elementów
 - **JavaScript** – Funkcjonalność i dynamiczne interakcje
 - **Framework (jeśli używasz)** – Opisz użyty framework, np. React, Vue, Angular
 
