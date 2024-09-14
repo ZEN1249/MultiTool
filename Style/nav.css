@@ -1,0 +1,27 @@
+nav{
+    max-width: 80%;
+    max-height: 50px;
+    background-color: grey;
+    border-radius: 8px;
+    margin: 10px auto;
+    position: sticky;
+    top: 0;
+    user-select: none;
+}
+#title{
+    display: flex;
+    width: 100%;
+}
+#icon{
+    margin: 5px;
+    border-radius: 8px;
+    height: 40px;
+    width: 40px;
+}
+#DateTime{
+    margin: 5px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    color: white;
+}
