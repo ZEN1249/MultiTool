@@ -6,3 +6,55 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*TODO: check other fonts*/
 }
+main{
+    width: 90%;
+    margin: auto;
+    background-color: grey;
+    border: solid black 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FeatureBOX{
+    /*FIXME:*/
+    min-height: 200px;
+    min-width: 200px;
+    height: 250px;
+    width: 250px;
+    /*FIXME:*/
+    background-color: aqua;
+    border-radius: 8px;
+    margin: 1.5%;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.FeatureBOX a{
+    display: flex;
+    justify-content: center;
+}
+.FeatureIMG{
+    border-radius: 50px;
+    height: 100px;
+    margin-top: 15%;
+}
+.FeatureBOX:hover{
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+/*
+    ?????????????
+
+    .FeatureBOX:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+*/
+.FeatureNAME{
+    color: white;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    position: absolute;
+}
