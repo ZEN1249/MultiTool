@@ -5,6 +5,7 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*TODO: check other fonts*/
+    background-color: #e0e0e0;
 }
 main{
     width: 90%;
@@ -21,7 +22,7 @@ main{
     height: 250px;
     width: 250px;
     /*FIXME:*/
-    background-color: aqua;
+    background-color: #967259;
     border-radius: 8px;
     margin: 1.5%;
     transition: transform 0.5s ease, box-shadow 0.3s ease;
@@ -33,6 +34,8 @@ main{
 .FeatureBOX a{
     display: flex;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 .FeatureIMG{
     border-radius: 50px;

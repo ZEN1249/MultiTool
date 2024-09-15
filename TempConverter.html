@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+    <link rel="shortcut icon" href="Images/Icons/Temp.webp" type="image/x-icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/TempConverter.css">
+</head>
+<body>
+    <nav>
+        <div id="title">
+            <img src="Images/Icons/Multitool.webp" alt="MultiTool" id="icon">
+            <a href="index.html"><img src="Images/" alt="HOME" id="HOME"></a>
+            <div id="DateTime"></div>
+        </div>
+    </nav>
+    <main>
+        <div id="tempcalc">
+            <label for="temperatura">Enter your temp:</label><br>
+            <input type="text" id="temperatura"><br>
+            
+            <label>Convert to:</label><br>
+            <input type="radio" id="cButton" name="unit">
+            <label for="cButton">Celsius</label><br>
+            
+            <input type="radio" id="fButton" name="unit">
+            <label for="fButton">Fahrenheit</label><br>
+            
+            <button type="button" id="submitButton">SUBMIT</button>
+            
+            <h2 id="templabel">Result:</h2>
+        </div>
+    </main>
+    <!-- Scripts -->
+    <script src="Scripts/DateTime.js"></script>
+    <script src="Scripts/TempConverter.js"></script>
+</body>
+</html>

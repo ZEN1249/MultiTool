@@ -1,12 +1,13 @@
 nav{
     max-width: 80%;
     max-height: 50px;
-    background-color: grey;
+    background-color: #967259;
     border-radius: 8px;
     margin: 10px auto;
     position: sticky;
     top: 0;
     user-select: none;
+    font-weight: bold;
 }
 #title{
     display: flex;
@@ -24,4 +25,12 @@ nav{
     display: flex;
     margin-left: auto;
     color: white;
+}
+nav a{
+    margin: 5px;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    color: white;
+    text-decoration: none;
 }
