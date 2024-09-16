@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Converter</title>
+    <link rel="shortcut icon" href="Images/Icons/ColorConverter.webp" type="image/x-icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/ColorConverter.css">
+</head>
+<body>
+    <nav>
+        <div id="title">
+            <img src="Images/Icons/Multitool.webp" alt="MultiTool" id="icon">
+            <a href="index.html"><img src="Images/" alt="HOME" id="HOME"></a>
+            <div id="DateTime"></div>
+        </div>
+    </nav>
+    <main>
+        <div id="Container">
+            <div class="input-group">
+                <label for="hex">HEX:</label>
+                <input type="text" id="hex" placeholder="#000000" maxlength="7">
+            </div>
+            
+            <div class="input-group">
+                <label for="rgb">RGB:</label>
+                <input type="text" id="rgb" placeholder="rgb(0, 0, 0)" maxlength="18">
+            </div>
+            
+            <div class="input-group">
+                <label for="hsl">HSL:</label>
+                <input type="text" id="hsl" placeholder="hsl(0, 0%, 0%)" maxlength="20">
+            </div>
+    
+            <div class="color-preview" id="colorPreview"><p>COLOR</p></div>
+        </div>
+    </main>
+    <!-- Scripts -->
+    <script src="Scripts/DateTime.js"></script>
+    <script src="Scripts/ColorConverter.js"></script>
+</body>
+</html>

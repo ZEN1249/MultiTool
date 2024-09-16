@@ -40,10 +40,27 @@ Projekt został stworzony z użyciem:
 - **HTML** – Struktura strony
 - **CSS** – Stylizacja i układ elementów
 - **JavaScript** – Funkcjonalność i dynamiczne interakcje
-- **Framework**   React
 
 ## Instalacja
 
-1. Sklonuj repozytorium:
+1. **Sklonowanie repozytorium**  
+   Aby sklonować repozytorium za pomocą zielonego przycisku:
+   - Wejdź na stronę repozytorium na GitHubie [tutaj](https://github.com/ZEN1249/MultiTool.git).
+   - Znajdź **zielony przycisk** z napisem **Code** w prawym górnym rogu.
+   - Kliknij na niego, a następnie wybierz opcję **Download ZIP**, aby pobrać projekt w formacie ZIP.
+   - Po pobraniu rozpakuj plik ZIP na swoim komputerze.
+
+   Alternatywnie, możesz sklonować repozytorium za pomocą komendy w terminalu:
    ```bash
-   git clone https://github.com/twoje-konto/multitool.git
+   git clone https://github.com/ZEN1249/MultiTool.git
+  
+## Uruchamianie
+
+1. **Otwieranie pliku `index.html`**  
+   Jeśli projekt jest prostą aplikacją HTML, można go uruchomić bezpośrednio w przeglądarce. Aby to zrobić:
+   - Po pobraniu i rozpakowaniu plików projektu, otwórz folder, w którym znajdują się wszystkie pliki.
+   - Znajdź plik o nazwie `index.html`.
+   - Kliknij dwukrotnie na plik `index.html`. Powinien on automatycznie otworzyć się w domyślnej przeglądarce internetowej.
+   - Jeśli plik nie otwiera się automatycznie, możesz ręcznie otworzyć go w przeglądarce, przeciągając i upuszczając plik `index.html` na okno przeglądarki lub używając opcji "Otwórz plik" w przeglądarce.
+
+   Ten sposób działa w przypadku projektów, które nie wymagają serwera, i pozwala na szybkie uruchomienie aplikacji w trybie lokalnym.

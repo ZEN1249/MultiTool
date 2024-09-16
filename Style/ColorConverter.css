@@ -18,26 +18,7 @@ main{
     min-height: 100vh;
     font-size: 20px;
 }
-
-button{
-    border: none;
-    border-radius: 8px;
-    transition: transform 0.1s ease, box-shadow 0.5s ease;
-    user-select: none;
-    cursor: pointer;
-    padding: 9px;
-    font-weight: bold;
-}
-button:hover{
-    transform: scale(1.1);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-#temperatura{
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-    border: none;
-    border-radius: 5px;
-}
-#tempcalc{
+#Container{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -46,4 +27,37 @@ button:hover{
     border-radius: 8px;
     background-color: #967259;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+.color-preview {
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #b9b3b3;
+    border-radius: 5px;
+    display: inline-block;
+}
+#colorPreview{
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
