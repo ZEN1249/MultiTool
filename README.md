@@ -57,10 +57,8 @@ Projekt został stworzony z użyciem:
 ## Uruchamianie
 
 1. **Otwieranie pliku `index.html`**  
-   Jeśli projekt jest prostą aplikacją HTML, można go uruchomić bezpośrednio w przeglądarce. Aby to zrobić:
+   Aplikację można uruchomić bezpośrednio w przeglądarce. Aby to zrobić:
    - Po pobraniu i rozpakowaniu plików projektu, otwórz folder, w którym znajdują się wszystkie pliki.
    - Znajdź plik o nazwie `index.html`.
    - Kliknij dwukrotnie na plik `index.html`. Powinien on automatycznie otworzyć się w domyślnej przeglądarce internetowej.
    - Jeśli plik nie otwiera się automatycznie, możesz ręcznie otworzyć go w przeglądarce, przeciągając i upuszczając plik `index.html` na okno przeglądarki lub używając opcji "Otwórz plik" w przeglądarce.
-
-   Ten sposób działa w przypadku projektów, które nie wymagają serwera, i pozwala na szybkie uruchomienie aplikacji w trybie lokalnym.
