@@ -34,3 +34,14 @@ nav a{
     color: white;
     text-decoration: none;
 }
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #b9b3b3;
+}
+footer p {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 8px;
+}
