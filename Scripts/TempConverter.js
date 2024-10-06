@@ -1,10 +1,3 @@
-function validateInput(tempInput) {
-    if (isNaN(tempInput) || tempInput === "") {
-        return false;
-    }
-    return true;
-}
-
 function displayResult(result, unit) {
     document.getElementById("templabel").innerHTML = `${result.toFixed(2)} ${unit}`;
 }
