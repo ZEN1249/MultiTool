@@ -9,15 +9,18 @@ document.getElementById("submitButton").onclick = function() {
         return;
     }
 
+    const FAHRENHEIT_OFFSET = 32;
+    const TO_CELSIUS_CONVERSION_FACTOR = 5 / 9;
+    const TO_FAHRENHEIT_CONVERSION_FACTOR = 9 / 5;
+    
     function toCelsius(fahrenheit) {
-        return (fahrenheit - 32) * (5 / 9);
+        return (fahrenheit - FAHRENHEIT_OFFSET) * TO_CELSIUS_CONVERSION_FACTOR;
     }
     
     function toFahrenheit(celsius) {
-        return (celsius * 9 / 5) + 32;
+        return (celsius * TO_FAHRENHEIT_CONVERSION_FACTOR) + FAHRENHEIT_OFFSET;
     }
     
-
     if (celsiusButton.checked) {
         let tempCelsius = toCelsius(Number(tempInput));
         templabel.innerHTML = `${tempCelsius.toFixed(2)} °C`;
