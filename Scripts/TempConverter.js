@@ -1,8 +1,7 @@
-
 document.getElementById("submitButton").onclick = function() {
     let tempInput = document.getElementById("temperatura").value;
-    let cButton = document.getElementById("cButton");
-    let fButton = document.getElementById("fButton");
+    let celsiusButton = document.getElementById("cButton");
+    let fahrenheitButton = document.getElementById("fButton");
     let templabel = document.getElementById("templabel");
 
     if (isNaN(tempInput) || tempInput === "") {
@@ -19,10 +18,10 @@ document.getElementById("submitButton").onclick = function() {
     }
     
 
-    if (cButton.checked) {
+    if (celsiusButton.checked) {
         let tempCelsius = toCelsius(Number(tempInput));
         templabel.innerHTML = `${tempCelsius.toFixed(2)} °C`;
-    } else if (fButton.checked) {
+    } else if (fahrenheitButton.checked) {
         let tempFahrenheit = toFahrenheit(Number(tempInput));
         templabel.innerHTML = `${tempFahrenheit.toFixed(2)} °F`;
     } else {
