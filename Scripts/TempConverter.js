@@ -2,8 +2,21 @@ function validateInput(tempInput) {
     if (isNaN(tempInput) || tempInput === "") {
         return false;
     }
+    
+    const MIN_TEMP = -273.15;
+    const MAX_TEMP = 1000;
+
+    if (tempInput < MIN_TEMP || tempInput > MAX_TEMP) {
+        return false;
+    }
+    
     return true;
 }
+
+function displayError(message) {
+    document.getElementById("templabel").innerHTML = message;
+}
+
 
 function displayResult(result, unit) {
     document.getElementById("templabel").innerHTML = `${result.toFixed(2)} ${unit}`;
