@@ -46,14 +46,6 @@ main{
     transform: scale(1.1);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-/*
-    ?????????????
-
-    .FeatureBOX:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    }
-*/
 .FeatureNAME{
     color: white;
     align-self: flex-end;
