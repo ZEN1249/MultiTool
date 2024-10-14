@@ -1,4 +1,4 @@
-function validateInput(tempInput) {
+function validateInput(tempInput){
     if (isNaN(tempInput) || tempInput === "") {
         return false;
     }
@@ -6,23 +6,23 @@ function validateInput(tempInput) {
     const MIN_TEMP = -273.15;
     const MAX_TEMP = 1000;
 
-    if (tempInput < MIN_TEMP || tempInput > MAX_TEMP) {
+    if (tempInput < MIN_TEMP || tempInput > MAX_TEMP){
         return false;
     }
     
     return true;
 }
 
-function displayError(message) {
+function displayError(message){
     document.getElementById("templabel").innerHTML = message;
 }
 
 
-function displayResult(result, unit) {
+function displayResult(result, unit){
     document.getElementById("templabel").innerHTML = `${result.toFixed(2)} ${unit}`;
 }
 
-document.getElementById("submitButton").onclick = function () {
+document.getElementById("submitButton").onclick = function(){
     let tempInput = document.getElementById("temperatura").value;
     let celsiusButton = document.getElementById("cButton");
     let fahrenheitButton = document.getElementById("fButton");
@@ -45,7 +45,7 @@ document.getElementById("submitButton").onclick = function () {
         return (celsius * TO_FAHRENHEIT_CONVERSION_FACTOR) + FAHRENHEIT_OFFSET;
     }
 
-    if (celsiusButton.checked) {
+    if (celsiusButton.checked){
         let tempCelsius = toCelsius(Number(tempInput));
         displayResult(tempCelsius, "°C");
     } else if (fahrenheitButton.checked) {
