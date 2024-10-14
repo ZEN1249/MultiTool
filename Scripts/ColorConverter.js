@@ -1,3 +1,22 @@
+// Nasłuchiwanie na kliknięcie na div z kolorami, które wywoła color picker
+document.getElementById('colorPreview').addEventListener('click', function() {
+    document.getElementById('colorPicker').click(); // Kliknięcie wywoła ukryty color picker
+});
+
+// Gdy zmieni się wartość w color pickerze, aktualizujemy wszystkie pola
+document.getElementById('colorPicker').addEventListener('input', function() {
+    const hexColor = this.value; // Pobieramy nowy wybrany kolor HEX
+    document.getElementById('hex').value = hexColor; // Aktualizujemy pole HEX
+
+    // Konwertujemy kolor HEX na RGB i HSL
+    const rgb = hexToRgb(hexColor);
+    const hsl = rgbToHsl(rgb.r, rgb.g, rgb.b);
+
+    // Aktualizujemy pola RGB, HSL oraz podgląd koloru
+    updateFields(hexColor, rgb, hsl);
+});
+
+// Inne eventy nasłuchujące na ręczną zmianę wartości HEX, RGB i HSL (jak poprzednio)
 document.getElementById('hex').addEventListener('input', function() {
     const hex = this.value;
     if (isValidHex(hex)) {

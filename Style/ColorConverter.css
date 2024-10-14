@@ -35,6 +35,8 @@ input {
     border: 2px solid #b9b3b3;
     border-radius: 5px;
     display: inline-block;
+    cursor: pointer;
+    user-select: none;
 }
 #colorPreview{
     justify-content: center;
