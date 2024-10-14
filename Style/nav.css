@@ -19,6 +19,13 @@ nav{
     height: 40px;
     width: 40px;
 }
+#HOME{
+    margin: 5px;
+    border-radius: 8px;
+    height: 35px;
+    width: 40px;
+    position: absolute;
+}
 #DateTime{
     margin: 5px;
     align-items: center;
