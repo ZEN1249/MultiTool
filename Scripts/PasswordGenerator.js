@@ -5,6 +5,11 @@ function GeneratePassword() {
     const includeNumbers = document.getElementById('Numbers').checked;
     const includeSpecial = document.getElementById('Special').checked;
 
+    if (isNaN(length) || length <= 0) {
+        document.getElementById('Password').value = 'WRONG number for length';
+        return;
+    }
+
     const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz';
     const numberChars = '0123456789';
