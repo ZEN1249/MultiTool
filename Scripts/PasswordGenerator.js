@@ -15,6 +15,7 @@ function GeneratePassword() {
     if (includeLowercase) allChars += lowercaseChars;
     if (includeNumbers) allChars += numberChars;
     if (includeSpecial) allChars += specialChars;
+    if (!includeUppercase && !includeLowercase && !includeNumbers && !includeSpecial) {document.getElementById('Password').value = 'Please select character type';return;}
 
     let password = '';
     for (let i = 0; i < length; i++) {
