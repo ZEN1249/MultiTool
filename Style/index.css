@@ -10,8 +10,6 @@ body{
 main{
     width: 90%;
     margin: auto;
-    background-color: grey;
-    border: solid black 1px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,7 +18,7 @@ main{
     min-height: 200px;
     min-width: 200px;
     height: 250px;
-    width: 250px;
+    width: 287px;
     /*FIXME:*/
     background-color: #967259;
     border-radius: 8px;
