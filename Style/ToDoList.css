@@ -1,0 +1,82 @@
+.ToDoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #967259;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ToDoContainer input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ToDoContainer button {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #5a9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.5s ease;
+}
+
+.ToDoContainer button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.Filters {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Filters button {
+    flex: 1;
+    margin: 0 5px;
+    background-color: #6c757d;
+}
+
+.Filters button:hover {
+    background-color: #5a9;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.taskItem.completed {
+    text-decoration: line-through;
+    background-color: #d4edda;
+}
+
+.taskItem button {
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: white;
+}
+
+.taskItem button:hover {
+    background-color: #c82333;
+}
