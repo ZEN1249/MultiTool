@@ -20,27 +20,27 @@ document.getElementById('passwordInput').addEventListener('input', function () {
         case 1:
             strengthBar.style.width = '20%';
             strengthBar.style.backgroundColor = 'red';
-            strengthMessage.textContent = 'Very Weak';
+            strengthMessage.textContent = 'Very Weak' + `  ${strength}/5`;
             break;
         case 2:
             strengthBar.style.width = '40%';
             strengthBar.style.backgroundColor = 'orange';
-            strengthMessage.textContent = 'Weak';
+            strengthMessage.textContent = 'Weak' + `  ${strength}/5`;
             break;
         case 3:
             strengthBar.style.width = '60%';
             strengthBar.style.backgroundColor = 'yellow';
-            strengthMessage.textContent = 'Moderate';
+            strengthMessage.textContent = 'Moderate' + `  ${strength}/5`;
             break;
         case 4:
             strengthBar.style.width = '80%';
             strengthBar.style.backgroundColor = 'lightgreen';
-            strengthMessage.textContent = 'Strong';
+            strengthMessage.textContent = 'Strong' + `  ${strength}/5`;
             break;
         case 5:
             strengthBar.style.width = '100%';
             strengthBar.style.backgroundColor = 'green';
-            strengthMessage.textContent = 'Very Strong';
+            strengthMessage.textContent = 'Very Strong' + `  ${strength}/5`;
             break;
     }
 });
