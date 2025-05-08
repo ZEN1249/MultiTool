@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Manager</title>
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/background.css">
+    <link rel="stylesheet" href="Style/BudgetManager.css">
+</head>
+<body>
+    <nav>
+        <div id="title">
+            <img src="Images/Icons/Multitool.webp" alt="MultiTool" id="icon">
+            <a href="index.html"><img src="Images/Icons/Home.png" alt="HOME" id="HOME"></a>
+            <div id="DateTime"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="BudgetManager">
+            <h3>Budget Manager</h3>
+            <div class="controls">
+                <input type="text" id="description" placeholder="Description">
+                <input type="number" id="amount" placeholder="Amount">
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button onclick="addTransaction()">Add</button>
+            </div>
+            <div class="summary">
+                <h4>Balance: <span id="balance">0</span> USD</h4>
+            </div>
+            <div class="transactions">
+                <h4>Transactions</h4>
+                <ul id="transactionList"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Filip Rutkowski. Niniejsze dzieło jest udostępniane na licencji (CC BY-NC-ND).</p>
+    </footer>
+    <script src="Scripts/BudgetManager.js"></script>
+    <script src="Scripts/DateTime.js"></script>
+</body>
+</html>
