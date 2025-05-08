@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Clock</title>
+    <link rel="shortcut icon" href="Images/Icons/Clock.png" type="image/x-icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/background.css">
+    <link rel="stylesheet" href="Style/FlipClock.css">
+</head>
+<body>
+    <nav>
+        <div id="title">
+            <img src="Images/Icons/Multitool.webp" alt="MultiTool" id="icon">
+            <a href="index.html"><img src="Images/Icons/Home.png" alt="HOME" id="HOME"></a>
+            <div id="DateTime"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="FeatureBOX">
+            <h3 class="FeatureNAME">Flip Clock</h3>
+            <div class="FlipClock">
+                <div class="ClockUnit">
+                    <div class="Flip" id="hours">
+                        <div class="Top"></div>
+                        <div class="Bottom"></div>
+                    </div>
+                    <span>:</span>
+                    <div class="Flip" id="minutes">
+                        <div class="Top"></div>
+                        <div class="Bottom"></div>
+                    </div>
+                    <span>:</span>
+                    <div class="Flip" id="seconds">
+                        <div class="Top"></div>
+                        <div class="Bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Filip Rutkowski. Niniejsze dzieło jest udostępniane na licencji (CC BY-NC-ND).</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="Scripts/DateTime.js"></script>
+    <script src="Scripts/FlipClock.js"></script>
+</body>
+</html>
