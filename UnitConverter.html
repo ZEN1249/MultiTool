@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="shortcut icon" href="Images/Icons/UnitConverter.png" type="image/x-icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/background.css">
+    <link rel="stylesheet" href="Style/UnitConverter.css">
+</head>
+<body>
+    <nav>
+        <div id="title">
+            <img src="Images/Icons/Multitool.webp" alt="MultiTool" id="icon">
+            <a href="index.html"><img src="Images/Icons/Home.png" alt="HOME" id="HOME"></a>
+            <div id="DateTime"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="FeatureBOX">
+            <h3 class="FeatureNAME">Unit Converter</h3>
+            <div class="ConverterBOX">
+                <input type="number" id="inputValue" placeholder="Enter value">
+                <select id="inputUnit">
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
+                    <option value="miles">Miles</option>
+                    <option value="feet">Feet</option>
+                    <option value="inches">Inches</option>
+                </select>
+                <span>to</span>
+                <select id="outputUnit">
+                    <option value="meters">Meters</option>
+                    <option value="kilometers">Kilometers</option>
+                    <option value="miles">Miles</option>
+                    <option value="feet">Feet</option>
+                    <option value="inches">Inches</option>
+                </select>
+                <button onclick="convertUnits()">Convert</button>
+                <p id="outputValue"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Filip Rutkowski. Niniejsze dzieło jest udostępniane na licencji (CC BY-NC-ND).</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="Scripts/DateTime.js"></script>
+    <script src="Scripts/UnitConverter.js"></script>
+</body>
+</html>

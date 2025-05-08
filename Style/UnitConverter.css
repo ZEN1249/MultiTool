@@ -1,0 +1,42 @@
+.ConverterBOX {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: #967259;
+    border-radius: 8px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ConverterBOX input,
+.ConverterBOX select,
+.ConverterBOX button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ConverterBOX button {
+    background-color: #5a9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.5s ease;
+}
+
+.ConverterBOX button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.ConverterBOX p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
