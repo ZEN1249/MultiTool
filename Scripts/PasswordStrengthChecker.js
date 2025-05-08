@@ -44,3 +44,21 @@ document.getElementById('passwordInput').addEventListener('input', function () {
             break;
     }
 });
+
+document.getElementById('togglePassword').addEventListener('click', function () {
+    const passwordInput = document.getElementById('passwordInput');
+    const type = passwordInput.type === 'password' ? 'text' : 'password';
+    passwordInput.type = type;
+    this.textContent = type === 'password' ? '👁️' : '🙈';
+});
+
+document.getElementById('copyPassword').addEventListener('click', function () {
+    const passwordInput = document.getElementById('passwordInput');
+    if (passwordInput.value) {
+        navigator.clipboard.writeText(passwordInput.value).then(() => {
+            alert('Password copied to clipboard!');
+        });
+    } else {
+        alert('No password to copy!');
+    }
+});
