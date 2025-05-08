@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="shortcut icon" href="Images/Icons/Calculator.png" type="image/x-icon">
+    <!-- Style -->
+    <link rel="stylesheet" href="Style/nav.css">
+    <link rel="stylesheet" href="Style/background.css">
+    <link rel="stylesheet" href="Style/ScientificCalculator.css">
+</head>
+<body>
+    <nav>
+        <div id="title">
+            <img src="Images/Icons/Multitool.webp" alt="MultiTool" id="icon">
+            <a href="index.html"><img src="Images/Icons/Home.png" alt="HOME" id="HOME"></a>
+            <div id="DateTime"></div>
+        </div>
+    </nav>
+    <main>
+        <div class="FeatureBOX">
+            <h3 class="FeatureNAME">Scientific Calculator</h3>
+            <div class="Calculator">
+                <input type="text" id="display" readonly>
+                <div class="Buttons">
+                    <button class="special" onclick="clearDisplay()">C</button>
+                    <button class="function" onclick="appendToDisplay('(')">(</button>
+                    <button class="function" onclick="appendToDisplay(')')">)</button>
+                    <button class="operator" onclick="appendToDisplay('/')">÷</button>
+                    <button class="number" onclick="appendToDisplay('7')">7</button>
+                    <button class="number" onclick="appendToDisplay('8')">8</button>
+                    <button class="number" onclick="appendToDisplay('9')">9</button>
+                    <button class="operator" onclick="appendToDisplay('*')">×</button>
+                    <button class="number" onclick="appendToDisplay('4')">4</button>
+                    <button class="number" onclick="appendToDisplay('5')">5</button>
+                    <button class="number" onclick="appendToDisplay('6')">6</button>
+                    <button class="operator" onclick="appendToDisplay('-')">−</button>
+                    <button class="number" onclick="appendToDisplay('1')">1</button>
+                    <button class="number" onclick="appendToDisplay('2')">2</button>
+                    <button class="number" onclick="appendToDisplay('3')">3</button>
+                    <button class="operator" onclick="appendToDisplay('+')">+</button>
+                    <button class="number" onclick="appendToDisplay('0')">0</button>
+                    <button class="number" onclick="appendToDisplay('.')">.</button>
+                    <button class="operator" onclick="calculate()">=</button>
+                    <button class="operator" onclick="appendToDisplay('^')">^</button>
+                    <button class="function" onclick="appendToDisplay('Math.sin(')">sin</button>
+                    <button class="function" onclick="appendToDisplay('Math.cos(')">cos</button>
+                    <button class="function" onclick="appendToDisplay('Math.tan(')">tan</button>
+                    <button class="function" onclick="appendToDisplay('Math.log(')">ln</button>
+                    <button class="function" onclick="appendToDisplay('Math.sqrt(')">√</button>
+                    <button class="special" onclick="appendToDisplay('Math.PI')">π</button>
+                    <button class="special" onclick="appendToDisplay('Math.E')">e</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 Filip Rutkowski. Niniejsze dzieło jest udostępniane na licencji (CC BY-NC-ND).</p>
+    </footer>
+    <!-- Scripts -->
+    <script src="Scripts/DateTime.js"></script>
+    <script src="Scripts/ScientificCalculator.js"></script>
+</body>
+</html>
